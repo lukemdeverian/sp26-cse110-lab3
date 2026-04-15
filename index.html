@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pomodoro Timer First Brainstorm</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <header>
+      <h1>Pomodoro Timer Team</h1>
+      <h2>Brainstorming</h2>
+      <h3>Date: April 14, 2026</h3>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#unfinished">Unfinished</a></li>
+        <li><a href="#new">New Business</a></li>
+        <li><a href="#questions">Questions</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="attendance">
+        <h2>Attendance</h2>
+        <ul>
+          <li>Luke</li>
+          <li>David</li>
+          <li>Marcus</li>
+        </ul>
+      </section>
+
+      <section id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Brainstorm feature ideas</li>
+          <li>Plan for upcoming sprint</li>
+          <li>Schedule next meeting</li>
+        </ol>
+      </section>
+
+      <section id="unfinished">
+        <h2>Unfinished</h2>
+        <p>
+          We are still deciding whether to hold the next meeting in person or over Zoom.
+        </p>
+      </section>
+
+      <section id="new">
+        <h2>New Business</h2>
+        <p>We are planning to build a Pomodoro timer app with a user friendly interface.</p>
+      </section>
+
+      <section id="questions">
+        <h2>Questions</h2>
+        <p>None</p>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Additional Comments</h2>
+
+        <div>
+          <p>
+            <strong>Priority:</strong> Finish all current assignments before the next meeting. <br>
+            <em>Please communicate accordingly if any issues arise.</em> <br>
+            Note the difference in the <b>bold text</b> and <strong>strong text</strong> <br>
+            Note the difference in the <i>italic text</i> and <em>emphasized text</em> <br>
+          </p>
+        </div>
+
+        <p>
+          This is a demonstration of how a <span>span element</span> appears.
+        </p>
+      </section>
+
+      <section>
+        <h2>What Was Presented</h2>
+
+        <h3>Whiteboard Diagram</h3>
+        <img src="whiteboard.jpg" alt="whiteboard picture">
+
+        <h3>Audio</h3>
+        <audio controls>
+          <source src="audioLab2.mp3" type="audio/mpeg">
+        </audio>
+
+        <h3>Video</h3>
+        <video controls>
+          <source src="videoLab2.mp4" type="video/mp4">
+        </video>
+      </section>
+
+      <section>
+        <details>
+          <summary>Additional Notes From Meeting</summary>
+          <p>We discussed how we envision the app and what features we want it to contain.</p>
+        </details>
+      </section>
+    </main>
+
+    <form>
+      <fieldset>
+        <p>
+          Name:
+          <input type="text" name="name">
+        </p>
+
+        <p>
+          Next Preferred Meeting Date:
+          <input type="date" name="meetingDate">
+        </p>
+
+        <p>
+          Preferred themes for the app:
+          <input type="radio" name="theme" value="Dark Mode">
+          <input type="radio" name="theme" value="Light Mode">
+        </p>
+
+        <p>
+          Fun Features to Include:
+          <input type="checkbox" name="music" value="music">
+          <input type="checkbox" name="timer" value="timer">
+        </p>
+
+        <p>
+          Preferred Study Methods:
+          <input list="studyMethods">
+          <datalist id="studyMethods">
+            <option value="Pomodoro">
+            <option value="Flashcards">
+            <option value="Practice Problems">
+          </datalist>
+        </p>
+
+        <p>
+          Preferred School Subject:
+          <select name="schoolSubject">
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+          </select>
+        </p>
+
+        <p>
+          Additional Comments or Concerns: <br>
+          <textarea name="comments" rows="5" cols="30"></textarea>
+        </p>
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+
+    <footer>
+      <p>CSE110 Lab2 by Luke Deverian</p>
+    </footer>
+
+  </body>
+</html>
