@@ -1,0 +1,67 @@
+/* ========================
+   General Styles
+   ======================== */
+
+/* Using a color name */
+body {
+  background-color: whitesmoke;
+}
+
+/* Using a hex code */
+h1 {
+  color: #ff4e4e;
+}
+
+/* Using rgb() */
+h2 {
+  color: rgb(41, 128, 185);
+}
+
+/* Using rgba() - with transparency */
+h3 {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* ========================
+   Navigation
+   ======================== */
+
+/* Using hsl() */
+nav {
+  background-color: hsl(210, 50%, 25%);
+}
+
+/* Using hsla() - with transparency */
+nav a {
+  color: hsla(0, 0%, 100%, 0.9);
+}
+
+/* ========================
+   Sections
+   ======================== */
+
+/* Using hex code */
+section {
+  border-left: 4px solid #3498db;
+}
+
+/* Using rgb() for background */
+header {
+  background-color: rgb(44, 62, 80);
+  color: #ffffff;
+}
+
+/* ========================
+   Wider-Gamut Colors
+   ======================== */
+
+/* Using color() with a predefined color space */
+footer {
+  background-color: color(srgb 0.17 0.24 0.31);
+  color: white;
+}
+
+/* Using color-mix() to blend two colors */
+form {
+  background-color: color-mix(in srgb, #3498db 30%, white 70%);
+}
