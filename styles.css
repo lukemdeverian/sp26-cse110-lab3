@@ -15,11 +15,14 @@
 /* Using a color name */
 body {
   background-color: whitesmoke;
+  width: 90%; /* % - relative unit */
+  margin: auto;
 }
 
 /* Using a hex code + CSS variable */
 h1 {
   color: var(--accent-color, tomato);
+  font-size: 2.5rem; /* rem - relative unit */
 }
 
 /* Using rgb() */
@@ -33,7 +36,7 @@ h3 {
 }
 
 p {
-  font-size: var(--font-size-base, 16px);
+  font-size: var(--font-size-base, 16px); /* px - absolute unit */
 }
 
 /* ========================
@@ -48,6 +51,8 @@ nav {
 /* Using hsla() - with transparency */
 nav a {
   color: hsla(0, 0%, 100%, 0.9);
+  font-size: 1.2em; /* em - relative unit */
+  padding: 0.5em;
 }
 
 /* ========================
@@ -55,13 +60,15 @@ nav a {
    ======================== */
 
 section {
-  border-left: 4px solid #3498db;
+  border-left: 4px solid #3498db; /* px - absolute unit */
+  margin-bottom: 20px; /* px - absolute unit */
 }
 
 /* Using CSS variable with fallback */
 header {
   background-color: var(--primary-color, #333);
   color: #ffffff;
+  padding-top: 0.5cm; /* cm - absolute unit */
 }
 
 /* ========================
@@ -72,6 +79,7 @@ header {
 footer {
   background-color: color(srgb 0.17 0.24 0.31);
   color: white;
+  font-size: 10pt; /* pt - absolute unit */
 }
 
 /* Using color-mix() to blend two colors */
