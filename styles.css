@@ -1,4 +1,14 @@
 /* ========================
+   CSS Variables & Fallbacks
+   ======================== */
+
+:root {
+  --primary-color: rgb(44, 62, 80);
+  --accent-color: #ff4e4e;
+  --font-size-base: 1rem;
+}
+
+/* ========================
    General Styles
    ======================== */
 
@@ -7,9 +17,9 @@ body {
   background-color: whitesmoke;
 }
 
-/* Using a hex code */
+/* Using a hex code + CSS variable */
 h1 {
-  color: #ff4e4e;
+  color: var(--accent-color, tomato);
 }
 
 /* Using rgb() */
@@ -20,6 +30,10 @@ h2 {
 /* Using rgba() - with transparency */
 h3 {
   color: rgba(0, 0, 0, 0.6);
+}
+
+p {
+  font-size: var(--font-size-base, 16px);
 }
 
 /* ========================
@@ -40,14 +54,13 @@ nav a {
    Sections
    ======================== */
 
-/* Using hex code */
 section {
   border-left: 4px solid #3498db;
 }
 
-/* Using rgb() for background */
+/* Using CSS variable with fallback */
 header {
-  background-color: rgb(44, 62, 80);
+  background-color: var(--primary-color, #333);
   color: #ffffff;
 }
 
