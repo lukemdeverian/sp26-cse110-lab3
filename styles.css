@@ -1,0 +1,422 @@
+/* ========================
+   Google Fonts Import
+   ======================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* ========================
+   CSS Variables & Fallbacks
+   ======================== */
+
+:root {
+  --primary-color: rgb(44, 62, 80);
+  --accent-color: #ff4e4e;
+  --font-size-base: 1rem;
+  --font-heading: 'Roboto Slab', serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+/* ========================
+   General Styles
+   ======================== */
+
+body {
+  background-color: whitesmoke;
+  width: 90%;
+  margin: auto;
+  font-family: var(--font-body);
+}
+
+h1 {
+  color: var(--accent-color, tomato);
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
+  font-family: var(--font-heading);
+}
+
+h2 {
+  color: rgb(41, 128, 185);
+  text-align: left;
+  text-decoration: none;
+  font-family: var(--font-heading);
+}
+
+h3 {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  font-family: var(--font-heading);
+}
+
+p {
+  font-size: var(--font-size-base, 16px);
+  color: #333333;
+  text-align: left;
+  font-family: var(--font-body);
+}
+
+/* ========================
+   Navigation
+   ======================== */
+
+nav {
+  background-color: hsl(210, 50%, 25%);
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: hsla(0, 0%, 100%, 0.9);
+  font-size: 1.2em;
+  padding: 0.5em;
+  text-decoration: none;
+  display: inline;
+  font-family: var(--font-body);
+}
+
+/* ========================
+   Sections
+   ======================== */
+
+section {
+  margin: 20px 0px 20px 0px;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  display: block;
+  position: relative;
+}
+
+/* ========================
+   Header
+   ======================== */
+
+header {
+  background-color: var(--primary-color, #333);
+  color: #ffffff;
+  padding-top: 0.5cm;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* ========================
+   Main
+   ======================== */
+
+main {
+  margin: auto;
+  max-width: 900px;
+  min-width: 320px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  align-items: start;
+}
+
+/* ========================
+   Footer
+   ======================== */
+
+footer {
+  background-color: #2b3d50;
+  color: white;
+  font-size: 10pt;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--font-body);
+}
+
+/* ========================
+   Form
+   ======================== */
+
+form {
+  background-color: color-mix(in srgb, #3498db 30%, white 70%);
+  border-style: solid;
+  border-color: #3498db;
+  border-width: 2px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 280px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 12px;
+  padding: 20px;
+  font-family: var(--font-body);
+}
+
+/* ========================
+   Display
+   ======================== */
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+section {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ========================
+   Sizing
+   ======================== */
+
+img {
+  width: 100%;
+  max-width: 600px;
+  min-width: 200px;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  min-width: 200px;
+  height: auto;
+}
+
+textarea {
+  width: 100%;
+  min-width: 200px;
+  max-width: 400px;
+  height: 120px;
+}
+
+/* ========================
+   Position
+   ======================== */
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+section {
+  position: relative;
+}
+
+section h2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* ========================
+   Pseudo-classes
+   ======================== */
+
+nav a:hover {
+  color: var(--accent-color, tomato);
+  text-decoration: underline;
+}
+
+button:hover {
+  background-color: hsl(210, 50%, 35%);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: hsl(210, 50%, 20%);
+  transform: scale(0.98);
+}
+
+input:hover {
+  border-color: var(--accent-color, tomato);
+}
+
+/* ========================
+   Flexbox
+   ======================== */
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================
+   Grid
+   ======================== */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  align-items: start;
+}
+
+/* ========================
+   Media Queries
+   ======================== */
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  nav a {
+    font-size: 1em;
+    padding: 4px 8px;
+  }
+
+  form {
+    min-width: 0;
+    width: 100%;
+  }
+
+  img, video {
+    min-width: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    width: 95%;
+  }
+
+  form {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  main {
+    grid-template-columns: 1fr;
+    max-width: 900px;
+  }
+
+  form {
+    max-width: 600px;
+  }
+}
+
+/* ========================
+   CSS Selectors
+   ======================== */
+
+* {
+  box-sizing: border-box;
+}
+
+summary {
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--primary-color, #333);
+}
+
+.hidden {
+  display: none;
+}
+
+#attendance {
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+#agenda {
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+input[type="date"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+main p {
+  line-height: 1.6;
+}
+
+form > fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+h2 + p {
+  margin-top: 8px;
+}
+
+h2 ~ p {
+  color: #444444;
+}
+
+p.hidden {
+  display: none;
+}
+
+nav a:hover {
+  color: var(--accent-color, tomato);
+  text-decoration: underline;
+}
+
+section:has(img) {
+  background-color: rgba(52, 152, 219, 0.08);
+  padding: 12px;
+}
+
+section:has(audio) {
+  border-color: hsl(210, 50%, 45%);
+}
+
+nav {
+  & ul {
+    list-style: none;
+  }
+
+  & a {
+    font-weight: 600;
+  }
+
+  & li:hover {
+    background-color: hsl(210, 50%, 35%);
+    border-radius: 4px;
+  }
+}
