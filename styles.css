@@ -1,4 +1,10 @@
 /* ========================
+   Google Fonts Import
+   ======================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* ========================
    CSS Variables & Fallbacks
    ======================== */
 
@@ -6,6 +12,8 @@
   --primary-color: rgb(44, 62, 80);
   --accent-color: #ff4e4e;
   --font-size-base: 1rem;
+  --font-heading: 'Roboto Slab', serif;
+  --font-body: 'Open Sans', sans-serif;
 }
 
 /* ========================
@@ -16,6 +24,7 @@ body {
   background-color: whitesmoke;
   width: 90%;
   margin: auto;
+  font-family: var(--font-body);
 }
 
 h1 {
@@ -23,23 +32,27 @@ h1 {
   font-size: 2.5rem;
   text-align: center;
   text-decoration: underline;
+  font-family: var(--font-heading);
 }
 
 h2 {
   color: rgb(41, 128, 185);
   text-align: left;
   text-decoration: none;
+  font-family: var(--font-heading);
 }
 
 h3 {
   color: rgba(0, 0, 0, 0.6);
   text-align: left;
+  font-family: var(--font-heading);
 }
 
 p {
   font-size: var(--font-size-base, 16px);
   color: #333333;
   text-align: left;
+  font-family: var(--font-body);
 }
 
 /* ========================
@@ -60,6 +73,7 @@ nav a {
   padding: 0.5em;
   text-decoration: none;
   display: inline;
+  font-family: var(--font-body);
 }
 
 /* ========================
@@ -123,6 +137,7 @@ footer {
   padding-right: 30px;
   text-align: center;
   text-decoration: none;
+  font-family: var(--font-body);
 }
 
 /* ========================
@@ -142,6 +157,7 @@ form {
   grid-template-columns: 1fr;
   grid-gap: 12px;
   padding: 20px;
+  font-family: var(--font-body);
 }
 
 /* ========================
