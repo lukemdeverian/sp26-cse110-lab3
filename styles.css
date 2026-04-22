@@ -93,6 +93,8 @@ header {
 main {
   margin: auto;
   max-width: 900px;
+  min-width: 320px;
+  width: 100%;
 }
 
 /* ========================
@@ -103,7 +105,7 @@ footer {
   background-color: color(srgb 0.17 0.24 0.31);
   color: white;
   font-size: 10pt;
-  padding-top: 20px; 
+  padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
@@ -117,10 +119,13 @@ footer {
 
 form {
   background-color: color-mix(in srgb, #3498db 30%, white 70%);
-  border-style: solid; /* longhand border */
+  border-style: solid;
   border-color: #3498db;
   border-width: 2px;
   border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  min-width: 280px;
 }
 
 /* ========================
@@ -128,7 +133,7 @@ form {
    ======================== */
 
 nav li {
-  display: inline; /* nav items inline so they appear in a row */
+  display: inline;
 }
 
 nav a {
@@ -142,4 +147,29 @@ section {
 
 .hidden {
   display: none;
+}
+
+/* ========================
+   Sizing
+   ======================== */
+
+img {
+  width: 100%;
+  max-width: 600px;
+  min-width: 200px;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  min-width: 200px;
+  height: auto;
+}
+
+textarea {
+  width: 100%;
+  min-width: 200px;
+  max-width: 400px;
+  height: 120px;
 }
