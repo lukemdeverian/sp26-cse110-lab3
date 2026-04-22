@@ -46,6 +46,7 @@ p {
 /* Using hsl() */
 nav {
   background-color: hsl(210, 50%, 25%);
+  padding: 10px 20px 10px 20px; /* shorthand padding */
 }
 
 /* Using hsla() - with transparency */
@@ -59,20 +60,39 @@ nav a {
    Sections
    ======================== */
 
+/* Shorthand margin + shorthand border */
 section {
-  border-left: 4px solid #3498db; /* px - absolute unit */
-  margin-bottom: 20px; /* px - absolute unit */
+  margin: 20px 0px 20px 0px; /* shorthand margin */
+  border: 2px solid #3498db; /* shorthand border */
+  border-radius: 4px;
 }
+
+/* ========================
+   Header
+   ======================== */
 
 /* Using CSS variable with fallback */
 header {
   background-color: var(--primary-color, #333);
   color: #ffffff;
   padding-top: 0.5cm; /* cm - absolute unit */
+  margin-top: 0px; /* longhand margin */
+  margin-bottom: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* ========================
-   Wider-Gamut Colors
+   Main
+   ======================== */
+
+main {
+  margin: auto; /* auto margin */
+  max-width: 900px;
+}
+
+/* ========================
+   Footer
    ======================== */
 
 /* Using color() with a predefined color space */
@@ -80,9 +100,22 @@ footer {
   background-color: color(srgb 0.17 0.24 0.31);
   color: white;
   font-size: 10pt; /* pt - absolute unit */
+  padding-top: 20px; /* longhand padding */
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
+/* ========================
+   Form
+   ======================== */
+
 /* Using color-mix() to blend two colors */
+/* Longhand border */
 form {
   background-color: color-mix(in srgb, #3498db 30%, white 70%);
+  border-style: solid; /* longhand border */
+  border-color: #3498db;
+  border-width: 2px;
+  border-radius: 8px;
 }
