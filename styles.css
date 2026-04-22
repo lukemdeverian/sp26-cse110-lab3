@@ -12,37 +12,33 @@
    General Styles
    ======================== */
 
-/* Using a color name */
 body {
   background-color: whitesmoke;
-  width: 90%; /* % - relative unit */
+  width: 90%;
   margin: auto;
 }
 
-/* Using a hex code + CSS variable */
 h1 {
   color: var(--accent-color, tomato);
-  font-size: 2.5rem; /* rem - relative unit */
-  text-align: center; /* text-align */
-  text-decoration: underline; /* text-decoration */
+  font-size: 2.5rem;
+  text-align: center;
+  text-decoration: underline;
 }
 
-/* Using rgb() */
 h2 {
   color: rgb(41, 128, 185);
   text-align: left;
   text-decoration: none;
 }
 
-/* Using rgba() - with transparency */
 h3 {
   color: rgba(0, 0, 0, 0.6);
   text-align: left;
 }
 
 p {
-  font-size: var(--font-size-base, 16px); /* px - absolute unit */
-  color: #333333; /* text color */
+  font-size: var(--font-size-base, 16px);
+  color: #333333;
   text-align: left;
 }
 
@@ -50,42 +46,40 @@ p {
    Navigation
    ======================== */
 
-/* Using hsl() */
 nav {
   background-color: hsl(210, 50%, 25%);
-  padding: 10px 20px 10px 20px; /* shorthand padding */
+  padding: 10px 20px 10px 20px;
   text-align: center;
 }
 
-/* Using hsla() - with transparency */
 nav a {
   color: hsla(0, 0%, 100%, 0.9);
-  font-size: 1.2em; /* em - relative unit */
+  font-size: 1.2em;
   padding: 0.5em;
-  text-decoration: none; /* remove underline from links */
+  text-decoration: none;
+  display: inline;
 }
 
 /* ========================
    Sections
    ======================== */
 
-/* Shorthand margin + shorthand border */
 section {
-  margin: 20px 0px 20px 0px; /* shorthand margin */
-  border: 2px solid #3498db; /* shorthand border */
+  margin: 20px 0px 20px 0px;
+  border: 2px solid #3498db;
   border-radius: 4px;
+  display: block;
 }
 
 /* ========================
    Header
    ======================== */
 
-/* Using CSS variable with fallback */
 header {
   background-color: var(--primary-color, #333);
   color: #ffffff;
-  padding-top: 0.5cm; /* cm - absolute unit */
-  margin-top: 0px; /* longhand margin */
+  padding-top: 0.5cm;
+  margin-top: 0px;
   margin-bottom: 20px;
   margin-left: 0px;
   margin-right: 0px;
@@ -97,7 +91,7 @@ header {
    ======================== */
 
 main {
-  margin: auto; /* auto margin */
+  margin: auto;
   max-width: 900px;
 }
 
@@ -105,12 +99,11 @@ main {
    Footer
    ======================== */
 
-/* Using color() with a predefined color space */
 footer {
   background-color: color(srgb 0.17 0.24 0.31);
   color: white;
-  font-size: 10pt; /* pt - absolute unit */
-  padding-top: 20px; /* longhand padding */
+  font-size: 10pt;
+  padding-top: 20px; 
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
@@ -122,12 +115,31 @@ footer {
    Form
    ======================== */
 
-/* Using color-mix() to blend two colors */
-/* Longhand border */
 form {
   background-color: color-mix(in srgb, #3498db 30%, white 70%);
   border-style: solid; /* longhand border */
   border-color: #3498db;
   border-width: 2px;
   border-radius: 8px;
+}
+
+/* ========================
+   Display
+   ======================== */
+
+nav li {
+  display: inline; /* nav items inline so they appear in a row */
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+section {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
