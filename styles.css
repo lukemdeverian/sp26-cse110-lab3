@@ -50,6 +50,8 @@ nav {
   background-color: hsl(210, 50%, 25%);
   padding: 10px 20px 10px 20px;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 nav a {
@@ -69,6 +71,7 @@ section {
   border: 2px solid #3498db;
   border-radius: 4px;
   display: block;
+  position: relative;
 }
 
 /* ========================
@@ -172,4 +175,23 @@ textarea {
   min-width: 200px;
   max-width: 400px;
   height: 120px;
+}
+
+/* ========================
+   Position
+   ======================== */
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+section {
+  position: relative;
+}
+
+section h2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
