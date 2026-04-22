@@ -134,6 +134,10 @@ form {
   width: 100%;
   max-width: 600px;
   min-width: 280px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 12px;
+  padding: 20px;
 }
 
 /* ========================
@@ -237,4 +241,15 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+/* ========================
+   Grid
+   ======================== */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  align-items: start;
 }
