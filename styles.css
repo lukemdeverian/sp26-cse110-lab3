@@ -87,6 +87,11 @@ header {
   margin-left: 0px;
   margin-right: 0px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 /* ========================
@@ -217,4 +222,19 @@ button:active {
 
 input:hover {
   border-color: var(--accent-color, tomato);
+}
+
+/* ========================
+   Flexbox
+   ======================== */
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
