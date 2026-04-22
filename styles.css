@@ -23,20 +23,27 @@ body {
 h1 {
   color: var(--accent-color, tomato);
   font-size: 2.5rem; /* rem - relative unit */
+  text-align: center; /* text-align */
+  text-decoration: underline; /* text-decoration */
 }
 
 /* Using rgb() */
 h2 {
   color: rgb(41, 128, 185);
+  text-align: left;
+  text-decoration: none;
 }
 
 /* Using rgba() - with transparency */
 h3 {
   color: rgba(0, 0, 0, 0.6);
+  text-align: left;
 }
 
 p {
   font-size: var(--font-size-base, 16px); /* px - absolute unit */
+  color: #333333; /* text color */
+  text-align: left;
 }
 
 /* ========================
@@ -47,6 +54,7 @@ p {
 nav {
   background-color: hsl(210, 50%, 25%);
   padding: 10px 20px 10px 20px; /* shorthand padding */
+  text-align: center;
 }
 
 /* Using hsla() - with transparency */
@@ -54,6 +62,7 @@ nav a {
   color: hsla(0, 0%, 100%, 0.9);
   font-size: 1.2em; /* em - relative unit */
   padding: 0.5em;
+  text-decoration: none; /* remove underline from links */
 }
 
 /* ========================
@@ -80,6 +89,7 @@ header {
   margin-bottom: 20px;
   margin-left: 0px;
   margin-right: 0px;
+  text-align: center;
 }
 
 /* ========================
@@ -104,6 +114,8 @@ footer {
   padding-bottom: 20px;
   padding-left: 30px;
   padding-right: 30px;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* ========================
